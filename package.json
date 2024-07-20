@@ -16,13 +16,13 @@
   "contributes": {
     "commands": [
       {
-        "command": "extension.copyPreviousLine",
-        "title": "Copy Previous Line"
+        "command": "extension.generateCode",
+        "title": "Generate Code"
       }
     ],
     "keybindings": [
       {
-        "command": "extension.copyPreviousLine",
+        "command": "extension.generateCode",
         "key": "alt+q",
         "when": "editorTextFocus"
       }
