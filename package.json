@@ -1,0 +1,45 @@
+{
+  "name": "zap-copilot",
+  "displayName": "Zap-Copilot",
+  "description": "An easy to use co-pilot for every developer",
+  "version": "0.0.1",
+  "publisher": "zap-team",
+  "repository": "https://github.com/arunachalam-b/zap-copilot",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.copyPreviousLine",
+        "title": "Copy Previous Line"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.copyPreviousLine",
+        "key": "alt+q",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint \"src/**/*.ts\"",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^18",
+    "@types/vscode": "^1.73.0",
+    "@typescript-eslint/eslint-plugin": "^7.14.0",
+    "@typescript-eslint/parser": "^7.14.0",
+    "eslint": "^8.26.0",
+    "typescript": "^5.5.2"
+  }
+}
